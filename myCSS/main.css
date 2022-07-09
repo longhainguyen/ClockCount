@@ -1,0 +1,30 @@
+body{
+    background-image: url(https://thumbs.dreamstime.com/b/orange-black-dog-paw-prints-tile-pattern-repeat-background-seamless-repeats-56349888.jpg);
+    background-size: 100px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    height: 100%;
+}
+
+.wrapper{
+    width: 62.5%;
+    margin: 30px auto;
+    margin-top: 15%;
+    color: white;
+    text-align: center;
+}
+
+h1, h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#hours, #minutes, #seconds, #tens{
+    font-size: 2em;
+}
+
+
+button{
+    font-size:1.2em;
+}

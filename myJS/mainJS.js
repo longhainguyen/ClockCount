@@ -28,6 +28,10 @@ window.onload = function () {
 	   clearInterval(Interval);
 	  tens = "00";
 	  seconds = "00";
+	  hours = "00";
+	  minutes = "00";
+	  appendHours.innerHTML = hours;
+	  appendMinutes.innerHTML = minutes;
 	  appendTens.innerHTML = tens;
 	  appendSeconds.innerHTML = seconds;
 	}

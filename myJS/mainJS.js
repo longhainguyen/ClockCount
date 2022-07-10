@@ -28,10 +28,10 @@ window.onload = function () {
 	   clearInterval(Interval);
 	  tens = "00";
 	  seconds = "00";
-	  hours = "00";
-	  minutes = "00";
-	  appendHours.innerHTML = hours;
-	  appendMinutes.innerHTML = minutes;
+	  hours = 0;
+	  minutes = 0;
+	  appendHours.innerHTML = "00";
+	  appendMinutes.innerHTML = "00";
 	  appendTens.innerHTML = tens;
 	  appendSeconds.innerHTML = seconds;
 	}
@@ -53,21 +53,21 @@ window.onload = function () {
 	  if (tens > 99) {
 		console.log("seconds");
 		seconds++;
-        if(seconds > 59){
-            seconds = 0;
-            minutes ++;
-        }
-        appendMinutes.innerHTML = "0" + minutes;
-        if(minutes > 59){
-            minutes = 0;
-            hours++;
-        }
-        appendHours.innerHTML = "0" + hours;
 		appendSeconds.innerHTML = "0" + seconds;
 		tens = 0;
 		appendTens.innerHTML = "0" + 0;
 	  }
 	  
+	  if(seconds > 59){
+		seconds = 0;
+		minutes ++;
+		}
+		appendMinutes.innerHTML = "0" + minutes;
+		if(minutes > 59){
+			minutes = 0;
+			hours++;
+		}
+		appendHours.innerHTML = "0" + hours;
 	  if (seconds > 9){
 		appendSeconds.innerHTML = seconds;
 	  }
@@ -75,7 +75,7 @@ window.onload = function () {
       if(minutes > 9){
         appendMinutes.innerHTML = minutes;
       }
-      if(hoursc> 9){
+      if(hours> 9){
         appendHours.innerHTML = hours;
       }
 	
